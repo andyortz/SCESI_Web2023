@@ -47,7 +47,7 @@ a{
     inline-size: 3em;
 }
 h1{
-    font-size: 60px;
+    font-size: 3em;
 }
 p{
     font-size: 16px;
@@ -60,6 +60,7 @@ p{
     padding: 5% 6%;
 }
 .mainfeed{
+    padding: 3%;
     margin: 0;
     width: 50%;
     float: left;
@@ -70,8 +71,11 @@ p{
     text-align: center;
 }
 .mainpost img{
-    inline-size: 85%;
+
+    inline-size: 100%;
 }
+
+
 .relevantnews{
     font-size: 1.5em;
     padding: 3%;
@@ -84,15 +88,6 @@ p{
     opacity: 50%;   
 }
 
-.prices h2, .prices h3{
-    align-items: center;
-    display: inline;
-}
-.prices h3{
-    box-sizing: border-box;
-    width: 2em;
-    background-color: var(--color-p-porange);
-}
 .attribution{
     padding: 5%;
     display: block;
