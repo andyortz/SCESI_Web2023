@@ -6,7 +6,9 @@
   content="width=device-width, user-scalable=no,initial-scale=1.0, maximum = 1.0, minimum-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel = "stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+
   <title>News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -31,22 +33,22 @@
           </ul>
         </aside>
       </div>
-      <hr>
     </header>
-    <main class="container">
+    <main class="container responsive">
       <div class="mainfeed">
         <article class="mainpost">
           <img src="assets/images/image-web-3-desktop.jpg" alt="web3">
-          <section class="">
-            <h1>The Bright Future of Web 3.0?</h1>
-          </section>
-          <section class="">
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-              But is it really fulfilling its promise?</p>
-              <a href="#open" class="button">
-                Read more</a>
-
-          </section>
+          <div class="principaltext responsive">
+            <section class="maintitle">
+              <h1>The Bright
+                Future of Web 3.0?</h1>
+            </section>
+            <section class="maindescp">
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?</p>
+              <a href="#open" class="button">READ MORE</a>
+            </section>
+          </div>
         </article>
       </div>
       <div class="relevantnews">
@@ -65,28 +67,40 @@
               <h3>Is VC Funding Drying Up?</h3>
               <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
             </li>
-            <hr>
           </ul>
         </section>
       </div>
-      <div class="posts">
-        01
-        Reviving Retro PCs
-        What happens when old PCs are given modern upgrades?
-      
-        02
-        Top 10 Laptops of 2022
-        Our best picks for various needs and budgets.
-      
-        03
-        The Growth of Gaming
-        How the pandemic has sparked fresh opportunities.
-      </div>
     </main>
-    <div class="attribution">
+    <div class="posts responsive">
+      <section class="postbox">
+        <img class="smallimg" src="assets/images/image-retro-pcs.jpg" alt="pc retro">
+        <article class="postext">
+          <h2>01</h2>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </article>
+      </section>
+      <section class="postbox">
+        <img class= "smallimg" src="assets/images/image-top-laptops.jpg" alt="laptop">
+        <article class="postext">
+          <h2>02</h2>
+          <h4>Top 10 Laptops of 2022</h4>
+          <p>Our best picks for various needs and budgets.</p>
+        </article>
+      </section>
+      <section class="postbox">
+        <img class= "smallimg" src="assets/images/image-gaming-growth.jpg" alt="mando de videojuegoss">
+        <article class="postext">
+          <h2>03</h2>
+            <h4>The Growth of Gaming</h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+        </article>
+      </section>
+    </div>
+    <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Andy Ortiz</a>.
-    </div>
+    </footer>
   </div>
 </body>
 </html>

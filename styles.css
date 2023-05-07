@@ -14,11 +14,8 @@
     color: var(--color-n-darkgrayishblue);
     box-sizing: border-box;
 }
-.header{
-    padding: 0 5%;
-}
 .header-content, .icons, .nav, .logo{
-    padding: 1% 2%;
+    padding: 1% 0;
     padding-right: 7%;
     display: flex;
     justify-content: space-between;
@@ -50,40 +47,50 @@ h3{
     font-size: 20px;
 }
 h1{
-    font-size: 3em;
+    text-align: left;
+    font-size: 58px;
+    line-height: 1;
+    margin:5% 0;
 }
 p{
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
 }
 
 .container{
     width: 100%;
     display: grid;
-    gap: 3%;
+    gap: 1%;
     justify-content: center;
-    overflow: hidden;
-    grid-template-columns: 1fr 40%;
-    padding: 2% 6%;
+    grid-template-columns: 1fr 34%;
+    padding: 2% 0%;
 }
 .mainfeed{
-    padding: 1%;
+    padding: 1% 0;
     margin: 0;
     align-items: center;
 }
-.mainpost{
-    text-align: center;
-}
+
 .mainpost img{
     inline-size: 100%;
 }
+.principaltext{
+    width: 100%;
+    display: grid;
+    gap: 2%;
+    justify-content: center;
+    grid-template-columns:repeat(2, 1fr);
+}
+.maindescp p{
+    padding-top: 4%;
+    padding-bottom: 8%;
+}
 
 .relevantnews{
-    background-color: var(--color-n-verydarkblue);
-    justify-content: center;
-    overflow: hidden;
-    width: auto;
-    min-height: 512 px;
+    margin: 1% 4%;
+    background-color: var(--color-n-verydarkblue);   
+    
 }
 .relevantnews h2{
     font-size: 40px;
@@ -92,15 +99,56 @@ p{
 }
 .listnews{
     
-    padding-inline: 2%;
-    padding-left: -2%;
+    padding-right: 7%;
+    color: var(--color-n-white);
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+}
+.listnews p{
+    color: var(--color-n-grayishblue);
 }
 .listnews ul{
     list-style: none;
 }
-.listnews h3{
-    color: var(--color-n-white);
+.posts{
+    align-items: center;
+    width: 100%;
+    display: grid;
+    gap: 1%;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    padding: 2% 0%;
+    
 }
+.postbox{
+    align-items: center;
+    display: grid;
+    gap: 1%;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr)
+}
+.smallimg{
+    width: 101px;
+}
+.postext{
+    width: 90%;
+}
+.postext h2{
+    font-size: 32px;
+    margin: 0;
+    color: var(--color-n-grayishblue);
+}
+.postext h4{
+    font-size: 18px;
+    margin: 0;
+    margin-top: 2%;
+}
+.postext p{
+    margin: 0;
+    line-height: 1.7;
+}
+
+
 .attribution{
     padding: 5%;
     display: block;
@@ -117,9 +165,9 @@ a:hover{
     margin: auto;
 }
 h4, h3{
-    color: var(--color-p-orange);
+    color: var(--color-n-white);
 }
-h1, h2{
+h1, h2, h4{
     color: var(--color-n-black);
 }
 .before{
@@ -127,29 +175,25 @@ h1, h2{
     text-decoration: line-through;
 }
 .button{
-    align-items: center;
-    font-size: 17px;
-    color: var(--color-p-orange);
-    box-sizing: border-box;
-    width: 20em;
-    margin: 3% 15%;
-    padding: 3% 15%;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: var(--color-n-white);
+    width: 15em;
+    margin: 3% 0;
+    padding: 4% 8%;
     background-color: var(--color-p-softred);
 }
-.button img{
-    inline-size: 1em;
-    fill-opacity: var(--color-n-white);
-}
 .button:hover{
-    color: var(--color-n-white);
     opacity: 50%;
 }
 @media screen and (max-width: 800px) {
-    .container{
+    .responsive {
         flex-wrap: wrap;
         display: flex;
         width: 100%;    
     }
+    
     .menu ul {
         display: none;
     }
