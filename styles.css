@@ -43,27 +43,23 @@ a{
 .icons a img{  
     inline-size: 3em;
 }
-h3{
-    font-size: 20px;
-}
 h1{
     text-align: left;
     font-size: 58px;
     line-height: 1;
-    margin:5% 0;
+    margin:0;
 }
 p{
     font-weight: 400;
     font-size: 15px;
     text-align: left;
 }
-
 .container{
     width: 100%;
     display: grid;
     gap: 1%;
     justify-content: center;
-    grid-template-columns: 1fr 34%;
+    grid-template-columns: 1fr 36%;
     padding: 2% 0%;
 }
 .mainfeed{
@@ -71,26 +67,25 @@ p{
     margin: 0;
     align-items: center;
 }
-
 .mainpost img{
     inline-size: 100%;
 }
 .principaltext{
     width: 100%;
+    padding: 2% 0;
     display: grid;
     gap: 2%;
     justify-content: center;
     grid-template-columns:repeat(2, 1fr);
 }
 .maindescp p{
+    margin: 0;
     padding-top: 4%;
     padding-bottom: 8%;
 }
-
 .relevantnews{
     margin: 1% 4%;
     background-color: var(--color-n-verydarkblue);   
-    
 }
 .relevantnews h2{
     font-size: 40px;
@@ -98,7 +93,6 @@ p{
     color: var(--color-p-softorange);
 }
 .listnews{
-    
     padding-right: 7%;
     color: var(--color-n-white);
     margin-bottom: 3%;
@@ -110,6 +104,11 @@ p{
 .listnews ul{
     list-style: none;
 }
+.listnews a{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-n-white);
+}
 .posts{
     align-items: center;
     width: 100%;
@@ -117,47 +116,48 @@ p{
     gap: 1%;
     justify-content: center;
     grid-template-columns: auto auto auto;
-    padding: 2% 0%;
-    
+    padding: 2% 0;
 }
 .postbox{
     align-items: center;
-    display: grid;
-    gap: 1%;
+    display: grid;    
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns:1fr 3fr
 }
 .smallimg{
-    width: 101px;
+    width: 102px;
 }
 .postext{
-    width: 90%;
+    height: 130px;
+    padding-left: 10%;
+    width: 100%;
 }
 .postext h2{
     font-size: 32px;
     margin: 0;
     color: var(--color-n-grayishblue);
 }
-.postext h4{
+.postext a{
+    color: var(--color-n-black);
+    font-weight: 800;
     font-size: 18px;
-    margin: 0;
     margin-top: 2%;
+    margin-bottom: 0;
 }
 .postext p{
-    margin: 0;
     line-height: 1.7;
 }
-
-
 .attribution{
     padding: 5%;
     display: block;
     float: left;
     box-sizing: border-box;
 }
+.listnews a:hover{
+    color: var(--color-p-softorange);
+}
 a:hover{
-    color: var(--color-n-black);
-    text-decoration: none;
+    color: var(--color-p-softred);
 }
 .wrapper {
     padding-top: 2%;
@@ -170,10 +170,6 @@ h4, h3{
 h1, h2, h4{
     color: var(--color-n-black);
 }
-.before{
-    color: var(--color-n-grayishblue);
-    text-decoration: line-through;
-}
 .button{
     font-size: 15px;
     letter-spacing: 3px;
@@ -185,16 +181,30 @@ h1, h2, h4{
     background-color: var(--color-p-softred);
 }
 .button:hover{
-    opacity: 50%;
+    color: var(--color-n-white);
+    background-color: var(--color-n-black);
 }
 @media screen and (max-width: 800px) {
+    .wrapper{
+        margin: 0% 4%;
+    }
     .responsive {
         flex-wrap: wrap;
         display: flex;
         width: 100%;    
     }
-    
-    .menu ul {
-        display: none;
+    .relevantnews, .postbox, .header{
+        margin: 5% 0;
+    }
+    .postext{
+        width: 100%;
+    }
+    .menu a{
+        color: transparent
+    }
+    .menu{
+        background-image: url(assets/images/icon-menu.jpg);
+        width: 3em;
+        height: 53px;
     }
 }
